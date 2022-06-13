@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+.big{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(221, 220, 220);
+    /* float: left; */
+    /* position: absolute; */
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); */
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.container::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.number{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #2e2e2e;
+}
+.hand{
+    --rotation:0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: bottom;
+    border-radius: 3px;
+    transform: translate(-50% , -100%) rotate(calc(var(--rotation)*1deg));
+}
+
+.sekund{
+    width: 2px;
+    height: 45%;
+    background-color: red;
+}
+.minut{
+    width: 4px;
+    height: 35%;
+    background-color: black;
+}
+.soat{
+    width: 6px;
+    height: 25%;
+    background-color: black;
+}
+#sana1,#sana2,#sana3,#sana4{
+    width: 40px;
+    height: 30px;
+    /* background-color: black; */
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 20%;
+    /* background-color: rgb(102, 102, 102); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#oy1,#oy2,#oy3,#oy4{
+    width: 80px;
+    height: 30px;
+    /* background-color: rgb(10
+    2, 102, 102); */
+    position: absolute;
+    top: calc(50% - 15px);
+    left: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+.arrow{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+    position: absolute;
+    /* border-radius: 50%; */
+    font-size: 7px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #2e2e2e;
+}
+
+.one{transform: rotate(30deg);}
+.two{transform: rotate(60deg);}
+.three{transform: rotate(90deg);}
+.four{transform: rotate(120deg);}
+.five{transform: rotate(150deg);}
+.six{transform: rotate(180deg);}
+.seven{transform: rotate(210deg);}
+.eight{transform: rotate(240deg);}
+.nine{transform: rotate(270deg);}
+.ten{transform: rotate(300deg);}
+.eleven{transform: rotate(330deg);}
+.twelve{transform: rotate(0deg);}
+
+.one span{transform: rotate(-30deg); display: block;}
+.two span{transform: rotate(-60deg); display: block;}
+.three span{transform: rotate(-90deg); display: block;}
+.four span{transform: rotate(-120deg); display: block;}
+.five span{transform: rotate(-150deg); display: block;}
+.six span{transform: rotate(-180deg); display: block;}
+.seven span{transform: rotate(-210deg); display: block;}
+.eight span{transform: rotate(-240deg); display: block;}
+.nine span{transform: rotate(-270deg); display: block;}
+.ten span{transform: rotate(-300deg); display: block;}
+.eleven span{transform: rotate(-330deg); display: block;}
+.twelve span{transform: rotate(-0deg); display: block;}
+
+
+.a1{transform: rotate(6deg);}
+.a2{transform: rotate(12deg);}
+.a3{transform: rotate(18deg);}
+.a4{transform: rotate(24deg);}
+
+.a5{transform: rotate(36deg);}
+.a6{transform: rotate(42deg);}
+.a7{transform: rotate(48deg);}
+.a8{transform: rotate(54deg);}
+
+.a9{transform: rotate(66deg);}
+.a10{transform: rotate(72deg);}
+.a11{transform: rotate(78deg);}
+.a12{transform: rotate(84deg);}
+
+.a13{transform: rotate(96deg);}
+.a14{transform: rotate(102deg);}
+.a15{transform: rotate(108deg);}
+.a16{transform: rotate(114deg);}
+
+.a17{transform: rotate(126deg);}
+.a18{transform: rotate(132deg);}
+.a19{transform: rotate(138deg);}
+.a20{transform: rotate(144deg);}
+
+.a21{transform: rotate(156deg);}
+.a22{transform: rotate(162deg);}
+.a23{transform: rotate(168deg);}
+.a24{transform: rotate(174deg);}
+
+.a25{transform: rotate(186deg);}
+.a26{transform: rotate(192deg);}
+.a27{transform: rotate(198deg);}
+.a28{transform: rotate(204deg);}
+
+.a29{transform: rotate(216deg);}
+.a30{transform: rotate(222deg);}
+.a31{transform: rotate(228deg);}
+.a32{transform: rotate(234deg);}
+
+.a33{transform: rotate(246deg);}
+.a34{transform: rotate(252deg);}
+.a35{transform: rotate(258deg);}
+.a36{transform: rotate(264deg);}
+
+.a37{transform: rotate(276deg);}
+.a38{transform: rotate(282deg);}
+.a39{transform: rotate(288deg);}
+.a40{transform: rotate(294deg);}
+
+.a41{transform: rotate(306deg);}
+.a42{transform: rotate(312deg);}
+.a43{transform: rotate(318deg);}
+.a44{transform: rotate(324deg);}
+
+.a45{transform: rotate(336deg);}
+.a46{transform: rotate(342deg);}
+.a47{transform: rotate(348deg);}
+.a48{transform: rotate(354deg);}
+
+
