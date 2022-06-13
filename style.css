@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+h1:first-child {
+    font-size: 45px;
+    color: gray ;
+}
 .big{
     display: flex;
     justify-content: space-evenly;
@@ -114,6 +118,8 @@ h1{
     font-family: sans-serif;
     color: #2e2e2e;
 }
+
+
 
 .one{transform: rotate(30deg);}
 .two{transform: rotate(60deg);}
